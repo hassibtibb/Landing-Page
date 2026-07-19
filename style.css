@@ -1,0 +1,240 @@
+/* ---------------------------------------------
+   Tokens (from the provided colors & fonts spec)
+--------------------------------------------- */
+:root {
+  --dark-bg: #1f2937;
+  --hero-heading: #f9faf8;
+  --hero-secondary: #e5e7eb;
+  --button-blue: #3882f6;
+  --info-heading: #1f2937;
+  --quote-bg: #e5e7eb;
+  --quote-text: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #1f2937;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+/* ---------------------------------------------
+   Hero section (header + hero content share the
+   same dark background, like in the design)
+--------------------------------------------- */
+.hero-section {
+  background-color: var(--dark-bg);
+  padding: 24px 80px 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.logo {
+  color: var(--hero-heading);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-links {
+  display: flex;
+  gap: 32px;
+}
+
+.header-links a {
+  color: var(--hero-secondary);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--hero-heading);
+  line-height: 1.1;
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 18px;
+  color: var(--hero-secondary);
+}
+
+.hero-image {
+  flex-shrink: 0;
+  width: 480px;
+  height: 260px;
+  background-color: #6b7785;
+  color: var(--hero-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* ---------------------------------------------
+   Buttons
+--------------------------------------------- */
+.btn {
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 28px;
+}
+
+.btn--filled {
+  background-color: var(--button-blue);
+  color: var(--hero-heading);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* ---------------------------------------------
+   Info section
+--------------------------------------------- */
+.info-section {
+  padding: 80px 80px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--info-heading);
+  margin: 0 0 60px;
+}
+
+.info-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 160px;
+}
+
+.info-box {
+  width: 140px;
+  height: 140px;
+  border: 3px solid var(--button-blue);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.info-item p {
+  font-size: 14px;
+  color: #4b5563;
+  text-align: center;
+  margin: 0;
+}
+
+/* ---------------------------------------------
+   Quote section
+--------------------------------------------- */
+.quote-section {
+  background-color: var(--quote-bg);
+  padding: 100px 80px;
+}
+
+.quote-section blockquote {
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-section p {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--quote-text);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.quote-section cite {
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--quote-text);
+}
+
+/* ---------------------------------------------
+   CTA section
+--------------------------------------------- */
+.cta-section {
+  background-color: var(--button-blue);
+  padding: 50px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cta-text h3 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cta-text p {
+  margin: 0;
+  color: var(--hero-secondary);
+  font-size: 16px;
+}
+
+/* ---------------------------------------------
+   Footer
+--------------------------------------------- */
+.footer {
+  background-color: var(--dark-bg);
+  padding: 28px 80px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--hero-secondary);
+  font-size: 14px;
+}
