@@ -1,25 +1,43 @@
-# Ridgeline — Landing Page Project
+# Landing Page Project
 
-A landing page built for The Odin Project's Foundations "Landing Page" assignment.
+A landing page built for The Odin Project's Foundations "Landing Page" assignment,
+matching the provided design spec (colors, fonts, and layout reference images).
 
-Since I couldn't view the exact design images provided in the lesson, I designed
-an original layout that follows the required structure (nav header, hero, 3-column
-info section, testimonial/quote section, CTA, footer) with my own content, fictional
-brand ("Ridgeline"), and visual style.
+## Structure
 
-## Image credits
+- Header + hero section (dark `#1F2937` background)
+- Info section — four-item flexbox row
+- Quote/testimonial section (`#E5E7EB` background)
+- Call-to-action section (`#3882F6` background)
+- Footer
 
-This draft uses placeholder images from picsum.photos. Before treating this as a
-finished portfolio piece, swap them for real, licensed photos and credit the
-photographer here, e.g.:
+## Fonts & colors
 
-- Hero photo: [Photographer Name] via [Pexels/Unsplash/Pixabay] — [link]
-- Testimonial photo: [Photographer Name] via [Pexels/Unsplash/Pixabay] — [link]
+Matches the spec exactly:
 
-## Fonts
+- Font: Roboto (loaded via Google Fonts)
+- Dark background (hero & footer): `#1F2937`
+- Hero heading: 48px, `#F9FAF8`, weight 900
+- Hero secondary text / header links: 18px, `#E5E7EB`
+- Logo text: 24px, `#F9FAF8`
+- Button / CTA background: `#3882F6`
+- Info section heading: 36px, `#1F2937`, weight 900
+- Quote section background: `#E5E7EB`
+- Quote text: 36px, `#1F2937`, weight 300, italic
 
-- Fraunces (display/headings)
-- Inter (body text)
-- JetBrains Mono (labels, buttons, captions)
+## Images
 
-All loaded via Google Fonts.
+The hero image and the four info-section boxes are currently plain placeholders
+(a gray box and blue-bordered boxes), matching the wireframe in the design spec.
+
+If you swap in real photos or illustrations, remember the assignment's licensing
+requirement — use only images you have the legal right to use (e.g. from Pexels,
+Pixabay, or Unsplash), and credit the creator here, for example:
+
+- Hero image: [Photographer Name] via [Pexels/Unsplash/Pixabay] — [link]
+
+## Notes
+
+This does not need to be pixel-perfect — margins, padding, and exact spacing were
+approximated to match the overall look rather than measured precisely. Not
+responsive yet; that's covered in a later lesson.
